@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray;
+}
+.about{
+    text-align: center;
+}
+.about-img{
+   display: flex;
+   justify-content: center;
+   margin: 2rem;
+}
+img{
+    height: 70%;
+    width: 60%;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+   
+}
+.btn{
+    border: none;
+    background-color: gray;
+    padding: 2% 8%;
+}
+.article-details div{
+    background-color: white;
+    width: 57%;
+}
+.article-details{
+    display: flex;
+    justify-content: center;
+}
+.article{
+    margin-bottom: 10%;
+}
+
+
+.content{
+    padding: 1rem;
+    display: none;
+}
+.btn.active{
+    background-color: white;
+}
+.content.active{
+    display: block;
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: lightgray;
+}
+.container{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#value{
+    font-size: 5rem;
+}
+h1{
+    font-size: 4rem;
+}
+.btn{
+    padding: 0.5rem;
+    border: 2px solid black;
+    font-weight: 600;
+    margin: 0.3rem;
+    font-size: large;
+}
