@@ -3,7 +3,7 @@ let months = ["Jan","Feb","March","April","May","June","July","August","Sep","Oc
 
 let giveaway = document.querySelector(".giveaway");
 
-let futureDate = new Date(2024, 4, 25, 11, 30, 0);
+let futureDate = new Date(2024, 5, 3, 16, 36, 0);
 
 let monthDate = futureDate.getDate();
 let day = futureDate.getDay();
