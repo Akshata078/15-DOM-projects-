@@ -16,7 +16,7 @@ let minute = futureDate.getMinutes();
 
 giveaway.textContent = `Giveaway Ends On ${day}, ${monthDate} ${month} ${year}  ${hour}:${minute}AM`
 
-
+let timer2 = document.querySelector(".timer");
 let timer = document.querySelectorAll(".timer h3");
 timer = Array.from(timer);
 
@@ -42,6 +42,12 @@ let allVal = [days, hours, minutes, seconds];
 
 for (let i=0; i<timer.length; i++){
     timer[i].innerText = allVal[i];  
+}
+
+if (t<0){
+    clearInterval(countdown);
+    timer2.innerHTML = `<h4>Sorry, This Giveaway Has Expired.</h4>`
+    
 }
 }
 
