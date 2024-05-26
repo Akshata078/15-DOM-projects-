@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: lightgray;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin-bottom: 1rem;
+  color: rgb(230, 221, 221);
+}
+.btn {
+  text-transform: uppercase;
+  background: transparent;
+  padding: 0.375rem 0.75rem;
+  display: inline-block;
+  font-size: 0.875rem;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.btn-white {
+  color: white;
+  border-color: wheat;
+  padding: 0.5rem 1rem;
+}
+.section {
+  padding-bottom: 5rem;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+nav {
+  background: white;
+  padding: 1rem 1.5rem;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.toggle {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  transition:all 0.3s linear;
+  cursor: pointer;
+}
+.logo {
+  height: 50px;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.show-links {
+  height: 200px;
+}
+.links a {
+  background-color: white;
+  color: rgb(73, 68, 68);
+  font-size: 1.1rem;
+  display: block;
+  transition: all 0.3s linear;
+  font-weight: bold;
+  padding: 0.75rem 0;
+}
+@media screen and (min-width: 800px) {
+  nav {
+    background: transparent;
+  }
+  .nav-container{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    background: transparent;
+    color:black;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    display: block;
+    transition: all 0.3s linear;
+    margin: 0 1rem;
+    font-weight: bold;
+    padding: 0;
+  }
+}
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(background.PNG) center/cover no-repeat;
+}
+.banner {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.container h1 {
+  color: white;
+  text-transform: uppercase;
+}
+.container p {
+  color: white;
+  max-width: 25rem;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .container p {
+    max-width: 40rem;
+  }
+}
+.title h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.title span {
+  color: aqua;
+}
+#about, #services, #tours {
+  height: 80vh;
+}
+#services {
+  background: white;
+}
+footer {
+  background: rgb(35, 34, 77);
+  padding: 5rem 1rem;
+}
+footer p {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing:0.1rem;
+  margin-bottom: 0;
+}
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: aqua;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: white;
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
